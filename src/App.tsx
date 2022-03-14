@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 
@@ -6,7 +7,15 @@ import theme from "./themes";
 
 import Home from "./screens/Home";
 
+import { onKeydown } from "./utils/easterEgg";
+
 function App() {
+  useEffect(() => {
+    window.addEventListener("keydown", onKeydown);
+
+    return () => window.removeEventListener("keydown", onKeydown);
+  }, []);
+
   return (
     <>
       <GlobalStyles />
