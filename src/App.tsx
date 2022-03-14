@@ -11,7 +11,7 @@ function App() {
     <>
       <GlobalStyles />
       <ThemeProvider theme={theme}>
-        <BrowserRouter>
+        <BrowserRouter basename="/">
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>
