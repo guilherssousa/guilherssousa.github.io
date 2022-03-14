@@ -4,6 +4,8 @@ import { Container, Work, Details, Name } from "./styles";
 
 import experience from "../../data/experience.json";
 
+import imageUrl from "../../utils/imageUrl";
+
 const Experience = () => {
   return (
     <Section id="experience">
@@ -15,7 +17,7 @@ const Experience = () => {
             <img
               height={60}
               width={60}
-              src={`${work.imageUrl}?w=60&h=60&webp`}
+              src={imageUrl(`${work.imageUrl}?w=60&h=60&webp`)}
               alt={work.company}
             ></img>
             <Details>
