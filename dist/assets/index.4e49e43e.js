@@ -222,7 +222,7 @@ Uso de tecnologias como Express, Prisma, Next.JS e algumas APIs de terceiros.`}]
   span {
     display: block;
   }
-`;var X=[{institution:"Universidade Est\xE1cio de S\xE1 Rio de Janeiro (EAD)",period:"Fevereiro de 2022 - Atualmente",status:"Cursando",area:"Bacharelado em Engenharia de Software"},{institution:"Col\xE9gio Flama",period:"Fevereiro de 2019 - Dezembro de 2021",status:"Conclu\xEDdo",area:"Ensino M\xE9dio, T\xE9cnico em Inform\xE1tica"}];const Y=()=>o(p,{id:"education",children:[e("h1",{children:"Forma\xE7\xE3o Acad\xEAmica"}),X.map((r,a)=>o(W,{children:[e("strong",{children:r.area}),e("span",{children:r.institution}),o("span",{children:["Estado: ",r.status]}),o("span",{children:["Per\xEDodo: ",r.period]})]},`academic-${a}`))]}),H=n.div`
+`;var X=[{institution:"Universidade Est\xE1cio de S\xE1 Rio de Janeiro (EAD)",period:"Fevereiro de 2022 - Atualmente",status:"Cursando",area:"Bacharelado em Engenharia de Software"},{institution:"Col\xE9gio Flama",period:"Fevereiro de 2019 - Dezembro de 2021",status:"Conclu\xEDdo",area:"Ensino M\xE9dio T\xE9cnico em Inform\xE1tica"}];const Y=()=>o(p,{id:"education",children:[e("h1",{children:"Forma\xE7\xE3o Acad\xEAmica"}),X.map((r,a)=>o(W,{children:[e("strong",{children:r.area}),e("span",{children:r.institution}),o("span",{children:["Estado: ",r.status]}),o("span",{children:["Per\xEDodo: ",r.period]})]},`academic-${a}`))]}),H=n.div`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
