@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "homepage": "https://guilherssousa.github.io/",
+  "homepage": "https://guilherssousa.github.io",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
