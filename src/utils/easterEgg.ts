@@ -19,6 +19,7 @@ export function onKeydown(event: KeyboardEvent) {
 
   if (iterator == sequence.length - 1) {
     window.alert("Você achou o easter egg!");
+    iterator = 0;
     return;
   }
 
