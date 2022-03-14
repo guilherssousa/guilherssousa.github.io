@@ -1,5 +1,5 @@
 import { Section } from "../../components/Section";
-import { BsGithub, BsLinkedin, BsSpotify } from "react-icons/bs";
+import { BsBehance, BsGithub, BsLinkedin, BsSpotify } from "react-icons/bs";
 
 const AboutMe = () => {
   return (
@@ -62,14 +62,10 @@ const AboutMe = () => {
         </li>
         <li>
           <i>
-            <BsGithub />
+            <BsBehance />
           </i>{" "}
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/guilherssousa"
-          >
-            GitHub
+          <a target="_blank" rel="noreferrer" href="https://be.net/madebygui">
+            Behance
           </a>
         </li>
       </ul>
