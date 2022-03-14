@@ -1,5 +1,3 @@
-
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -34,6 +32,7 @@ Abaixo segue o que foi utilizado na criação do portal:
 - [React](https://pt-br.reactjs.org/) - O React é uma biblioteca JavaScript para criar interfaces de usuário;
 - [Vite](https://vitejs.dev/) - O Vite é um ferramental que visa oferecer uma experiência de desenvolvimento mais rápida para projetos Web modernos;
 - [Styled Components](https://styled-components.com/) - O Styled Components é uma biblioteca para estilização de componentes;
+- - [Styled Media Query](https://github.com/morajabi/styled-media-query) - O Styled Media Query é um utilitário para trabalhar com responsividade usando Styled Components;
 - [Axios](https://github.com/axios/axios) - O Axios é um cliente HTTP baseado em Promises para Browser e NodeJS;
 - [ESLint](https://eslint.org/) - O ESLint é uma ferramenta de lint plugável para JavaScript e JSX;
 - [Prettier](https://prettier.io/) - O Prettier atualiza seu código automaticamente seguindo os padrões que você quiser toda vez salva o arquivo;
