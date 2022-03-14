@@ -4,14 +4,22 @@ export const Wrapper = styled.div`
   background: ${(props) => props.theme.backgroundColor};
   min-height: 100vh;
   color: #fff;
+  position: relative;
 `;
 
 export const Overlay = styled.div`
-  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(240 232 213 / 0.08)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(240 232 213 / 0.08)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e"),
+    linear-gradient(
+      83.2deg,
+      rgba(73, 71, 108, 1) 10.8%,
+      rgba(63, 64, 107, 1) 94.3%
+    );
   mask-image: linear-gradient(to top, transparent, white);
 
   position: absolute;
   pointer-events: none;
+
+  height: 100%;
 
   top: 0;
   right: 0;
