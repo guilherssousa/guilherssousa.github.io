@@ -1,14 +1,14 @@
 [
   {
     "name": "Dramaland",
-    "imageUrl": "/assets/dramaland.png",
+    "imageUrl": "/assets/dramaland.webp",
     "description": "Um portal de notícias, resenhas e opinião do mundo da dramaturgia coreana. \n\n Construido com Next.JS, TypeScript, Tailwind, OneSignal e Blogger API.",
     "url": "https://github.com/guilherssousa/dramaland",
     "year": "2022"
   },
   {
     "name": "Correio Anônimo",
-    "imageUrl": "/assets/correio.png",
+    "imageUrl": "/assets/correio.webp",
     "description": "Envie mensagens de forma anônima para suas pessoas queridas usando seus nomes de usuário do Twitter. \n\n Construído usando React, Firebase e Styled Components.",
     "url": "https://correioanonimo.com.br",
     "year": "2021"
