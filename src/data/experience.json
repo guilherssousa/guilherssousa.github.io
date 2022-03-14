@@ -1,0 +1,16 @@
+[
+  {
+    "company": "Mais Esports",
+    "imageUrl": "/assets/maisesports.png",
+    "position": "Desenvolvedor Fullstack Part-time",
+    "period": "Janeiro de 2021 - Atualmente",
+    "description": "Responsável por parte do desenvolvimento da cobertura de eventos de forma interativa no site principal, realizando integrações com diferentes APIs e oferecendo uma experiência que seja agradável desde ao usuário comum interessado em checar datas de partidas até o usuário hardcore interessado em odds de Apostas. \n\nUso frequente de tecnologias como React, Next JS, Express, GraphQL, Strapi além de algumas práticas como otimização de páginas e SEO."
+  },
+  {
+    "company": "Inhouse.gg",
+    "imageUrl": "/assets/inhouse.png",
+    "position": "Desenvolvedor Fullstack Part-time",
+    "period": "Janeiro de 2022 - Atualmente",
+    "description": "Responsável pelo desenvolvimento de ferramentas para integração e automatização de tarefas relevantes, como gerenciamento de contas, manutenção de serviços Web e onboarding de jogadores.\n\nUso de tecnologias como Express, Prisma, Next.JS e algumas APIs de terceiros."
+  }
+]
