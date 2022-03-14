@@ -12,7 +12,12 @@ const Experience = () => {
       <Container>
         {experience.map((work, index) => (
           <Work key={`experience-${index}`}>
-            <img src={work.imageUrl} alt={work.company}></img>
+            <img
+              height={60}
+              width={60}
+              src={`${work.imageUrl}?w=60&h=60&webp`}
+              alt={work.company}
+            ></img>
             <Details>
               <Name>{work.company}</Name>
               <div>{work.position}</div>

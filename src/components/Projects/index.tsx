@@ -26,7 +26,7 @@ const Projects = () => {
             key={`project-${index}`}
           >
             <ProjectImage
-              src={project.imageUrl}
+              src={`${project.imageUrl}?w=360&h=225&webp`}
               alt={project.name}
             ></ProjectImage>
             <ProjectName>

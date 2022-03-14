@@ -20,7 +20,7 @@ export const Project = styled.a`
 
 export const ProjectImage = styled.img`
   width: 360px;
-  height: 200px;
+  height: 225px;
   aspect-ratio: 16/9;
   border-radius: 0.5em;
   border: 1px solid #eeee;
