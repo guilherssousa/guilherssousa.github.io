@@ -4,8 +4,6 @@ import { Container, Work, Details, Name } from "./styles";
 
 import experience from "../../data/experience.json";
 
-import imageUrl from "../../utils/imageUrl";
-
 const Experience = () => {
   return (
     <Section id="experience">

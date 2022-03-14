@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "../../utils/mediaQuery";
 
 export const Grid = styled.div`
   width: 100%;
@@ -6,6 +7,10 @@ export const Grid = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1.5em;
   margin-top: 1em;
+
+  ${media.lessThan("medium")`
+    grid-template-columns: 1fr;
+  `};
 `;
 
 export const Project = styled.a`
@@ -19,12 +24,13 @@ export const Project = styled.a`
 `;
 
 export const ProjectImage = styled.img`
-  width: 360px;
-  height: 225px;
+  width: 100%;
+  height: auto;
   aspect-ratio: 16/9;
   border-radius: 0.5em;
   border: 1px solid #eeee;
   background-color: white;
+  object-fit: cover;
 `;
 
 export const ProjectName = styled.div`

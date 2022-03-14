@@ -12,8 +12,6 @@ import { BiLinkAlt } from "react-icons/bi";
 
 import projects from "../../data/projects.json";
 
-import imageUrl from "../../utils/imageUrl";
-
 const Projects = () => {
   return (
     <Section id="projects">

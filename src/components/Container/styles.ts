@@ -31,7 +31,7 @@ export const Overlay = styled.div`
 export const Content = styled.div`
   max-width: 768px;
   margin: 0 auto;
-  padding: 1em;
+  padding: 1.5em;
   padding-bottom: 8em;
   position: relative;
   z-index: 10;

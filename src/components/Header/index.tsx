@@ -1,7 +1,5 @@
 import { Container } from "./styles";
 
-import imageUrl from "../../utils/imageUrl";
-
 const Header = () => {
   return (
     <Container>

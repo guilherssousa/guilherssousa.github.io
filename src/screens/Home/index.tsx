@@ -1,3 +1,4 @@
+import { MobileNavigation } from "../../components/MobileNavigation";
 import { Container } from "../../components/Container";
 import { Header } from "../../components/Header";
 import { Navigation } from "../../components/Navigation";
@@ -10,6 +11,7 @@ import { Projects } from "../../components/Projects";
 const Home = () => {
   return (
     <Container>
+      <MobileNavigation />
       <Header />
       <Navigation />
 

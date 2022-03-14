@@ -1,9 +1,14 @@
 import styled from "styled-components";
+import media from "../../utils/mediaQuery";
 
 export const Container = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-around;
+
+  ${media.lessThan("small")`
+    display: none;
+  `};
 
   margin: 1.5em 0;
 
@@ -68,6 +73,10 @@ export const Link = styled.a`
 `;
 
 export const ToTopButton = styled.div`
+  ${media.lessThan("small")`
+    display: none;
+  `};
+
   position: fixed;
   z-index: 100;
   bottom: 2em;
@@ -76,7 +85,7 @@ export const ToTopButton = styled.div`
   left: 50%;
   transform: translateX(-50%);
   background-color: ${(props) => props.theme.primary};
-  padding: 1em 1.5em;
+  padding: 0.5em 1em;
   border-radius: 2em;
   font-weight: 700;
   box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);

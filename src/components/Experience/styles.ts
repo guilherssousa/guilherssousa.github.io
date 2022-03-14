@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "../../utils/mediaQuery";
 
 export const Container = styled.div`
   margin-top: 1em !important;
@@ -20,11 +21,16 @@ export const Work = styled.div`
   img {
     width: 60px;
     border-radius: 30px;
+    ${media.lessThan("small")`
+      display: none;
+    `};
   }
 `;
 
 export const Details = styled.div`
-  margin-left: 1em;
+  ${media.greaterThan("small")`
+    margin-left: 1em;
+  `};
   margin-top: 0em;
 `;
 

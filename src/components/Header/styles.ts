@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "../../utils/mediaQuery";
 
 export const Container = styled.section`
   display: flex;
@@ -8,6 +9,10 @@ export const Container = styled.section`
 
   max-width: 640px;
   margin: 3em auto 0em auto;
+
+  ${media.lessThan("small")`
+    margin: 1em auto 0em auto;
+  `};
 
   img {
     height: 10em;
@@ -22,6 +27,7 @@ export const Container = styled.section`
   }
 
   p {
+    font-size: 1.2em;
     margin-top: 0.5em;
     text-align: center;
   }
