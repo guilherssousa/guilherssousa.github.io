@@ -22,7 +22,10 @@ const MobileNavigation = () => {
       {isOpen && (
         <Container>
           <Content ref={navRef}>
-            <ToggleNavButton onClick={handleToggleNavbar}>
+            <ToggleNavButton
+              onClick={handleToggleNavbar}
+              aria-label="Fechar Navegação"
+            >
               <IoClose color={"#fff"} size={45} />
             </ToggleNavButton>
 
@@ -41,7 +44,10 @@ const MobileNavigation = () => {
           </Content>
         </Container>
       )}
-      <ToggleNavButton onClick={handleToggleNavbar}>
+      <ToggleNavButton
+        onClick={handleToggleNavbar}
+        aria-label="Abrir Navegação"
+      >
         <HiMenuAlt2 color={"#fff"} size={45} />
       </ToggleNavButton>
     </>
