@@ -18,8 +18,8 @@ function App() {
 
   return (
     <>
-      <GlobalStyles />
       <ThemeProvider theme={theme}>
+        <GlobalStyles />
         <BrowserRouter basename="/">
           <Routes>
             <Route path="/" element={<Home />} />

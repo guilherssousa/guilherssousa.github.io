@@ -12,6 +12,21 @@ const GlobalStyle = createGlobalStyle`
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
   }
+
+  body {
+    overflow: overlay;
+}
+
+  ::-webkit-scrollbar {
+    background-color: transparent;
+    padding: 1em;
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #ffffff40;
+    border-radius: 10px;
+  }
 `;
 
 export default GlobalStyle;

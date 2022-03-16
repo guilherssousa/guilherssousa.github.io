@@ -14,7 +14,11 @@ export const Overlay = styled.div`
       rgba(33, 31, 88, 1) 10.8%,
       rgba(43, 54, 87, 1) 94.3%
     );
-  mask-image: radial-gradient(circle at top, rgba(255,255,255,0.6), transparent);
+  mask-image: radial-gradient(
+    circle at top,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
 
   position: absolute;
   pointer-events: none;
