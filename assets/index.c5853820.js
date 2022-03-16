@@ -1,4 +1,4 @@
-import{W as y,g as k,s as n,j as b,r as m,I as A,H as C,B as z,a as S,b as $,c as R,d as T,e as F,F as j,f as I,R as P,h as L,i as O,k as B}from"./vendor.dff6fbf8.js";const N=function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))a(t);new MutationObserver(t=>{for(const s of t)if(s.type==="childList")for(const c of s.addedNodes)c.tagName==="LINK"&&c.rel==="modulepreload"&&a(c)}).observe(document,{childList:!0,subtree:!0});function l(t){const s={};return t.integrity&&(s.integrity=t.integrity),t.referrerpolicy&&(s.referrerPolicy=t.referrerpolicy),t.crossorigin==="use-credentials"?s.credentials="include":t.crossorigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function a(t){if(t.ep)return;t.ep=!0;const s=l(t);fetch(t.href,s)}};N();const D=y`
+import{W as k,g as y,s as n,j as b,r as m,I as A,H as C,B as z,a as S,b as $,c as R,d as T,e as j,F,f as I,R as L,h as P,i as O,k as B}from"./vendor.dff6fbf8.js";const N=function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))a(t);new MutationObserver(t=>{for(const s of t)if(s.type==="childList")for(const c of s.addedNodes)c.tagName==="LINK"&&c.rel==="modulepreload"&&a(c)}).observe(document,{childList:!0,subtree:!0});function l(t){const s={};return t.integrity&&(s.integrity=t.integrity),t.referrerpolicy&&(s.referrerPolicy=t.referrerpolicy),t.crossorigin==="use-credentials"?s.credentials="include":t.crossorigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function a(t){if(t.ep)return;t.ep=!0;const s=l(t);fetch(t.href,s)}};N();const D=k`
   * {
     padding: 0;
     margin: 0;
@@ -10,7 +10,22 @@ import{W as y,g as k,s as n,j as b,r as m,I as A,H as C,B as z,a as S,b as $,c a
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
   }
-`,U={backgroundColor:"#1e293b",primary:"#f97316"},d=k({small:"640px",medium:"768px",large:"1024px"}),M=n.nav`
+
+  body {
+    overflow: overlay;
+}
+
+  ::-webkit-scrollbar {
+    background-color: transparent;
+    padding: 1em;
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #ffffff40;
+    border-radius: 10px;
+  }
+`,U={backgroundColor:"#1e293b",primary:"#f97316"},d=y({small:"640px",medium:"768px",large:"1024px"}),M=n.nav`
   position: fixed;
   top: 0;
   left: 0;
@@ -68,7 +83,7 @@ import{W as y,g as k,s as n,j as b,r as m,I as A,H as C,B as z,a as S,b as $,c a
   text-decoration: none;
   padding: 0.5em;
   font-weight: bold;
-`,e=b.exports.jsx,r=b.exports.jsxs,x=b.exports.Fragment,G=()=>{const[o,i]=m.exports.useState(!1),l=m.exports.useRef(null);async function a(){if(o){l.current&&l.current.classList.add("close"),await setTimeout(()=>i(!1),300);return}i(!0)}return r(x,{children:[o&&e(M,{children:r(X,{ref:l,children:[e(v,{onClick:a,"aria-label":"Fechar Navega\xE7\xE3o",children:e(A,{color:"#fff",size:45})}),e(h,{href:"#about-me",onClick:a,children:"Sobre mim"}),e(h,{href:"#experience",onClick:a,children:"Experi\xEAncia"}),e(h,{href:"#education",onClick:a,children:"Forma\xE7\xE3o Acad\xEAmica"}),e(h,{href:"#projects",onClick:a,children:"Projetos"})]})}),e(v,{onClick:a,"aria-label":"Abrir Navega\xE7\xE3o",children:e(C,{color:"#fff",size:45})})]})},q=n.div`
+`,e=b.exports.jsx,r=b.exports.jsxs,x=b.exports.Fragment,q=()=>{const[o,i]=m.exports.useState(!1),l=m.exports.useRef(null);async function a(){if(o){l.current&&l.current.classList.add("close"),await setTimeout(()=>i(!1),300);return}i(!0)}return r(x,{children:[o&&e(M,{children:r(X,{ref:l,children:[e(v,{onClick:a,"aria-label":"Fechar Navega\xE7\xE3o",children:e(A,{color:"#fff",size:45})}),e(h,{href:"#about-me",onClick:a,children:"Sobre mim"}),e(h,{href:"#experience",onClick:a,children:"Experi\xEAncia"}),e(h,{href:"#education",onClick:a,children:"Forma\xE7\xE3o Acad\xEAmica"}),e(h,{href:"#projects",onClick:a,children:"Projetos"})]})}),e(v,{onClick:a,"aria-label":"Abrir Navega\xE7\xE3o",children:e(C,{color:"#fff",size:45})})]})},G=n.div`
   background: ${o=>o.theme.backgroundColor};
   min-height: 100vh;
   color: #fff;
@@ -80,7 +95,11 @@ import{W as y,g as k,s as n,j as b,r as m,I as A,H as C,B as z,a as S,b as $,c a
       rgba(33, 31, 88, 1) 10.8%,
       rgba(43, 54, 87, 1) 94.3%
     );
-  mask-image: radial-gradient(circle at top, rgba(255,255,255,0.6), transparent);
+  mask-image: radial-gradient(
+    circle at top,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
 
   position: absolute;
   pointer-events: none;
@@ -99,7 +118,7 @@ import{W as y,g as k,s as n,j as b,r as m,I as A,H as C,B as z,a as S,b as $,c a
   padding-bottom: 8em;
   position: relative;
   z-index: 10;
-`,_=({children:o})=>r(q,{children:[e(H,{}),e(J,{children:o})]}),W=n.section`
+`,_=({children:o})=>r(G,{children:[e(H,{}),e(J,{children:o})]}),W=n.section`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -288,7 +307,7 @@ import{W as y,g as k,s as n,j as b,r as m,I as A,H as C,B as z,a as S,b as $,c a
   li + li {
     margin-top: 0.5em;
   }
-`,Z=()=>r(f,{id:"about-me",children:[e("h1",{children:"Sobre mim"}),e("p",{children:"Desenvolvedor Fullstack, me considero um entusiasta de solu\xE7\xF5es e como elas podem ser usadas para impactar o nosso cotidiano. Gosto de desenvolver usando React e seus frameworks, al\xE9m de escrever alguns back-ends e solu\xE7\xF5es mais alternativas de vez em quando."}),r("p",{children:["Falo ",e("strong",{children:"Ingl\xEAs intermedi\xE1rio (suficiente a n\xEDvel T\xE9cnico)"}),", al\xE9m de ",e("strong",{children:"Portugu\xEAs nativo."})]}),r("p",{children:["Gosto de ",e("strong",{children:"design gr\xE1fico"}),","," ",e("strong",{children:"edi\xE7\xE3o de v\xEDdeo"}),", ",e("strong",{children:"automa\xE7\xF5es"}),","," ",e("strong",{children:"caf\xE9"})," e ",e("strong",{children:"gatos"}),". Adepto da religi\xE3o dos monitores ultrawide e hater de sites que n\xE3o s\xE3o otimizados pra eles."]}),e("p",{children:"Eu tenho muitas redes sociais, mas uso essas como as principais:"}),r("ul",{children:[r("li",{children:[e(S,{})," ",e("a",{target:"_blank",rel:"noreferrer",href:"https://github.com/guilherssousa/",children:"GitHub"})]}),r("li",{children:[e("i",{children:e($,{})})," ",e("a",{target:"_blank",rel:"noreferrer",href:"https://www.linkedin.com/in/guilhermedasilvasousa/",children:"Linkedin"})]}),r("li",{children:[e("i",{children:e(R,{})})," ",e("a",{target:"_blank",rel:"noreferrer",href:"https://open.spotify.com/user/f0mg1ppcpollg45sozzd9gu14?si=01b62e080ff14e4a",children:"Spotify"})]}),r("li",{children:[e("i",{children:e(T,{})})," ",e("a",{target:"_blank",rel:"noreferrer",href:"https://be.net/madebygui",children:"Behance"})]})]})]}),ee=n.div`
+`,Z=()=>r(f,{id:"about-me",children:[e("h1",{children:"Sobre mim"}),e("p",{children:"Desenvolvedor Fullstack, me considero um entusiasta de solu\xE7\xF5es e como elas podem ser usadas para impactar o nosso cotidiano. Gosto de desenvolver usando React e seus frameworks, al\xE9m de escrever alguns back-ends e solu\xE7\xF5es mais alternativas de vez em quando."}),r("p",{children:["Estou aberto a propostas para presta\xE7\xE3o de servi\xE7os de constru\xE7\xE3o de sites de pequeno a m\xE9dio porte, caso esteja interessado, me envie um email em ",e("strong",{children:"guilherssousa@gmail.com"})," ou me chame no LinkedIn. (Link abaixo)"]}),r("p",{children:["Falo ",e("strong",{children:"Ingl\xEAs intermedi\xE1rio (suficiente a n\xEDvel T\xE9cnico)"}),", al\xE9m de ",e("strong",{children:"Portugu\xEAs nativo."})]}),r("p",{children:["Gosto de ",e("strong",{children:"design gr\xE1fico"}),","," ",e("strong",{children:"edi\xE7\xE3o de v\xEDdeo"}),", ",e("strong",{children:"automa\xE7\xF5es"}),","," ",e("strong",{children:"caf\xE9"})," e ",e("strong",{children:"gatos"}),". Adepto da religi\xE3o dos monitores ultrawide e hater de sites que n\xE3o s\xE3o otimizados pra eles."]}),e("p",{children:"Eu tenho muitas redes sociais, mas uso essas como as principais:"}),r("ul",{children:[r("li",{children:[e(S,{})," ",e("a",{target:"_blank",rel:"noreferrer",href:"https://github.com/guilherssousa/",children:"GitHub"})]}),r("li",{children:[e("i",{children:e($,{})})," ",e("a",{target:"_blank",rel:"noreferrer",href:"https://www.linkedin.com/in/guilhermedasilvasousa/",children:"Linkedin"})]}),r("li",{children:[e("i",{children:e(R,{})})," ",e("a",{target:"_blank",rel:"noreferrer",href:"https://open.spotify.com/user/f0mg1ppcpollg45sozzd9gu14?si=01b62e080ff14e4a",children:"Spotify"})]}),r("li",{children:[e("i",{children:e(T,{})})," ",e("a",{target:"_blank",rel:"noreferrer",href:"https://be.net/madebygui",children:"Behance"})]})]})]}),ee=n.div`
   margin-top: 1em !important;
 
   span {
@@ -371,4 +390,4 @@ Uso de tecnologias como Express, Prisma, Next.JS e algumas APIs de terceiros.`}]
 
  Construido com Next.JS, TypeScript, Tailwind, OneSignal e Blogger API.`,url:"https://github.com/guilherssousa/dramaland",year:"2022"},{name:"Correio An\xF4nimo",imageUrl:"/assets/correio.webp",description:`Envie mensagens de forma an\xF4nima para suas pessoas queridas usando seus nomes de usu\xE1rio do Twitter. 
 
- Constru\xEDdo usando React, Firebase e Styled Components.`,url:"https://correioanonimo.com.br",year:"2021"}];const ge=()=>r(f,{id:"projects",children:[e("h1",{children:"Projetos"}),e(de,{children:he.map((o,i)=>r(ce,{href:"https://correioanonimo.com.br",target:"_blank",rel:"noreferrer",children:[e(me,{src:o.imageUrl,alt:o.name}),r(ue,{children:[o.name," ",e(F,{})]}),e(pe,{children:o.year}),e("p",{children:o.description})]},`project-${i}`))})]}),fe=()=>r(_,{children:[e(G,{}),e(Y,{}),e(Q,{}),e(Z,{}),e(ie,{}),e(le,{}),e(ge,{})]}),w=["ArrowUp","ArrowUp","ArrowDown","ArrowDown","ArrowLeft","ArrowRight","ArrowLeft","ArrowRight","b","a","Enter"];var u=0;function E(o){const{key:i}=o;if(u==w.length-1){window.alert("Voc\xEA achou o easter egg!"),u=0;return}i==w[u]?u++:u=0}function be(){return m.exports.useEffect(()=>(window.addEventListener("keydown",E),()=>window.removeEventListener("keydown",E)),[]),r(x,{children:[e(D,{}),e(j,{theme:U,children:e(I,{basename:"/",children:e(P,{children:e(L,{path:"/",element:e(fe,{})})})})})]})}O.render(e(B.StrictMode,{children:e(be,{})}),document.getElementById("root"));
+ Constru\xEDdo usando React, Firebase e Styled Components.`,url:"https://correioanonimo.com.br",year:"2021"}];const ge=()=>r(f,{id:"projects",children:[e("h1",{children:"Projetos"}),e(de,{children:he.map((o,i)=>r(ce,{href:"https://correioanonimo.com.br",target:"_blank",rel:"noreferrer",children:[e(me,{src:o.imageUrl,alt:o.name}),r(ue,{children:[o.name," ",e(j,{})]}),e(pe,{children:o.year}),e("p",{children:o.description})]},`project-${i}`))})]}),fe=()=>r(_,{children:[e(q,{}),e(Y,{}),e(Q,{}),e(Z,{}),e(ie,{}),e(le,{}),e(ge,{})]}),w=["ArrowUp","ArrowUp","ArrowDown","ArrowDown","ArrowLeft","ArrowRight","ArrowLeft","ArrowRight","b","a","Enter"];var u=0;function E(o){const{key:i}=o;if(u==w.length-1){window.alert("Voc\xEA achou o easter egg!"),u=0;return}i==w[u]?u++:u=0}function be(){return m.exports.useEffect(()=>(window.addEventListener("keydown",E),()=>window.removeEventListener("keydown",E)),[]),e(x,{children:r(F,{theme:U,children:[e(D,{}),e(I,{basename:"/",children:e(L,{children:e(P,{path:"/",element:e(fe,{})})})})]})})}O.render(e(B.StrictMode,{children:e(be,{})}),document.getElementById("root"));
