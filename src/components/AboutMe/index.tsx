@@ -12,6 +12,14 @@ const AboutMe = () => {
         desenvolver usando React e seus frameworks, além de escrever alguns
         back-ends e soluções mais alternativas de vez em quando.
       </p>
+
+      <p>
+        Estou aberto a propostas para prestação de serviços de construção de
+        sites de pequeno a médio porte, caso esteja interessado, me envie um
+        email em <strong>guilherssousa@gmail.com</strong> ou me chame no
+        LinkedIn. (Link abaixo)
+      </p>
+
       <p>
         Falo <strong>Inglês intermediário (suficiente a nível Técnico)</strong>,
         além de <strong>Português nativo.</strong>
