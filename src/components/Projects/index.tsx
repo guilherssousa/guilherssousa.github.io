@@ -20,7 +20,7 @@ const Projects = () => {
       <Grid>
         {projects.map((project, index) => (
           <Project
-		    href={project.url}
+            href={project.url}
             target="_blank"
             rel="noreferrer"
             key={`project-${index}`}
@@ -28,6 +28,7 @@ const Projects = () => {
             <ProjectImage
               src={project.imageUrl}
               alt={project.name}
+              loading="lazy"
             ></ProjectImage>
             <ProjectName>
               {project.name} <BiLinkAlt />
