@@ -28,7 +28,7 @@ const Projects = () => {
             <ProjectImage
               src={project.imageUrl}
               alt={project.name}
-              loading="lazy"
+              loading={"lazy"}
             ></ProjectImage>
             <ProjectName>
               {project.name} <BiLinkAlt />
