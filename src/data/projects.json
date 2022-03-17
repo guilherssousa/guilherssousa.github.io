@@ -12,5 +12,12 @@
     "description": "Envie mensagens de forma anônima para suas pessoas queridas usando seus nomes de usuário do Twitter. \n\n Construído usando React, Firebase e Styled Components.",
     "url": "https://correioanonimo.com.br",
     "year": "2021"
+  },
+  {
+    "name": "P44blo.",
+    "imageUrl": "/assets/p44blo.webp",
+    "description": "Ruan 'p44blo' é um editor de vídeos de Blumenau/SC. \n\n Construído com HTML, CSS e Javascript Vanilla.",
+    "url": "http://www.p44blo.com",
+    "year": "2020"
   }
 ]

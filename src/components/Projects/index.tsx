@@ -20,7 +20,7 @@ const Projects = () => {
       <Grid>
         {projects.map((project, index) => (
           <Project
-            href="https://correioanonimo.com.br"
+		    href={project.url}
             target="_blank"
             rel="noreferrer"
             key={`project-${index}`}

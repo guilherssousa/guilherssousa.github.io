@@ -28,8 +28,7 @@ export const ProjectImage = styled.img`
   height: auto;
   aspect-ratio: 16/9;
   border-radius: 0.5em;
-  border: 1px solid #eeee;
-  background-color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   object-fit: cover;
 `;
 
