@@ -16,7 +16,7 @@ export const Container = styled.section`
 
   img {
     height: 10em;
-    width: fit-content;
+    width: 10em;
     border: 0.3em solid #fff;
     border-radius: 5em;
     margin: 0 auto;
