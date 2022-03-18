@@ -8,15 +8,17 @@ export const Grid = styled.div`
   grid-gap: 1.5em;
   margin-top: 1em;
 
+  color: ${(props) => props.theme.textColor} !important;
+
   ${media.lessThan("medium")`
     grid-template-columns: 1fr;
   `};
 `;
 
 export const Project = styled.a`
-  color: #fff !important;
   font-weight: 500 !important;
   transition: filter 0.2s ease-out;
+  color: ${(props) => props.theme.textColor} !important;
 
   &:hover {
     filter: brightness(0.9);
@@ -45,6 +47,6 @@ export const ProjectName = styled.div`
 `;
 
 export const ProjectYear = styled.div`
-  color: #fff;
+  color: ${(props) => props.theme.textColor} !important;
   font-size: 0.9em;
 `;

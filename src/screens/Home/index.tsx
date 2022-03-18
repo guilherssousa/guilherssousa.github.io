@@ -1,4 +1,3 @@
-import { MobileNavigation } from "../../components/MobileNavigation";
 import { Container } from "../../components/Container";
 import { Header } from "../../components/Header";
 import { Navigation } from "../../components/Navigation";
@@ -8,11 +7,14 @@ import { Experience } from "../../components/Experience";
 import { Education } from "../../components/Education";
 import { Projects } from "../../components/Projects";
 
-const Home = () => {
+interface HomeProps {
+  themeSwitcher: () => void;
+}
+
+const Home = ({ themeSwitcher }: HomeProps) => {
   return (
     <Container>
-      <MobileNavigation />
-      <Header />
+      <Header themeSwitcher={themeSwitcher} />
       <Navigation />
 
       <AboutMe />

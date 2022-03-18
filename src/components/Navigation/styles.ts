@@ -16,7 +16,7 @@ export const Container = styled.nav`
     font-weight: bold;
     font-size: 1.2em;
     cursor: pointer;
-    color: #fff;
+    color: ${(props) => props.theme.primary};
     text-decoration: none;
     position: relative;
 

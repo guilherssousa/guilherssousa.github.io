@@ -10,9 +10,11 @@ export const Container = styled.section`
     ${media.lessThan("small")`
       font-size: 1.8em;
     `};
+    color: ${(props) => props.theme.textColor};
   }
 
   p {
+    color: ${(props) => props.theme.secondary};
     margin-top: 0.5em;
 
     white-space: pre-line;

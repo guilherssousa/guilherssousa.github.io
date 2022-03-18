@@ -29,14 +29,16 @@ export const Content = styled.div`
       transform: translateX(-100%);
     }
     to {
-      background-color: ${(props) => props.theme.backgroundColor};
+      background-color: ${(props) =>
+        props.theme.name && props.theme.backgroundColor};
       transform: translateX(0);
     }
   }
 
   @keyframes slideOut {
     from {
-      background-color: ${(props) => props.theme.backgroundColor};
+      background-color: ${(props) =>
+        props.theme.name && props.theme.backgroundColor};
       transform: translateX(0);
     }
     to {
@@ -59,7 +61,7 @@ export const ToggleNavButton = styled.button`
 `;
 
 export const Link = styled.a`
-  color: white;
+  color: ${(props) => props.theme.textColor};
   display: block;
   font-size: 1.2em;
   text-decoration: none;
