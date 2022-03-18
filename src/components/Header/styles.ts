@@ -79,6 +79,7 @@ export const ProfilePic = styled.div`
 export const ThemeButtonContainer = styled.div`
   width: 100%;
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
 
   button {

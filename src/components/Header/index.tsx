@@ -18,9 +18,7 @@ const Header = ({ themeSwitcher }: HeaderProps) => {
   return (
     <Container>
       <ThemeButtonContainer>
-        <MobileNavigation />
-
-        <button onClick={handleChangeTheme}>
+        <button aria-label="Mudar cor do site" onClick={handleChangeTheme}>
           {theme.name == "dark" ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -51,6 +49,7 @@ const Header = ({ themeSwitcher }: HeaderProps) => {
             </svg>
           )}
         </button>
+        <MobileNavigation />
       </ThemeButtonContainer>
       <ProfilePic>
         <img src={"/assets/profile_pic.webp"} alt="Sou eu!"></img>

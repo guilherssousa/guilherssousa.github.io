@@ -49,14 +49,14 @@ export const Content = styled.div`
 `;
 
 export const ToggleNavButton = styled.button`
-  display: none;
+  display: none !important;
   appearance: none;
   border: 0;
   outline: 0;
   background: none;
 
   ${media.lessThan("small")`
-    display: block;
+    display: block !important;
   `};
 `;
 
