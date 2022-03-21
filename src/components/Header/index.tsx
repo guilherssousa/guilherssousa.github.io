@@ -52,7 +52,7 @@ const Header = ({ themeSwitcher }: HeaderProps) => {
         <MobileNavigation />
       </ThemeButtonContainer>
       <ProfilePic>
-        <img src={"/assets/profile_pic.webp"} alt="Sou eu!"></img>
+        <img src={"/assets/profile_pic.jpg"} alt="Sou eu!"></img>
         <span>Talvez esse site tenha um segredo, nunca se sabe...</span>
       </ProfilePic>
       <h2>Oi! Meu nome é Guilherme da Silva Sousa.</h2>
