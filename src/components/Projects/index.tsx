@@ -1,9 +1,9 @@
 import { Section } from "../Section";
 
 import {
-  Grid,
+  Container,
   Project,
-  ProjectImage,
+  ProjectData,
   ProjectName,
   ProjectYear,
 } from "./styles";
@@ -17,7 +17,7 @@ const Projects = () => {
     <Section id="projects">
       <h1>Projetos</h1>
 
-      <Grid>
+      <Container>
         {projects.map((project, index) => (
           <Project
             href={project.url}
@@ -25,19 +25,16 @@ const Projects = () => {
             rel="noreferrer"
             key={`project-${index}`}
           >
-            <ProjectImage
-              src={project.imageUrl}
-              alt={project.name}
-              loading={"lazy"}
-            ></ProjectImage>
-            <ProjectName>
-              {project.name} <BiLinkAlt />
-            </ProjectName>
-            <ProjectYear>{project.year}</ProjectYear>
-            <p>{project.description}</p>
+            <ProjectData>
+              <ProjectName>
+                {project.name} <BiLinkAlt />
+              </ProjectName>
+              <ProjectYear>{project.year}</ProjectYear>
+              <p>{project.description}</p>
+            </ProjectData>
           </Project>
         ))}
-      </Grid>
+      </Container>
     </Section>
   );
 };
