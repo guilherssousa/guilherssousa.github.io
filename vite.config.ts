@@ -7,6 +7,7 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
+      strategies: "injectManifest",
       includeAssets: ["/assets/favicon.ico", "/assets/profile_pic.jpg"],
       manifest: {
         name: "Guilherme Sousa",
